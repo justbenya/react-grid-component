@@ -1,11 +1,12 @@
 import React from 'react';
 import Box from './components/Box/Box';
 import Grid from './components/Grid/Grid';
+import GridRuler from './components/GridRuler/GridRuler';
 
 function App() {
     return (
         <div className="App" style={ { margin: 16, position: 'relative', height: '100vh' } }>
-            {/*<GridRuler spacing={ 1 } />*/ }
+            <GridRuler spacing={ 1 } />
             <Grid
                 container spacing={ 1 }
                 justifyContent={ 'space-between' }

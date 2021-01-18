@@ -14,9 +14,27 @@ $justifyContent: (
 );
 
 $alignContent: (
+        stretch,
         flex-start,
         center,
-        flex-end
+        flex-end,
+        space-between,
+        space-around
+);
+
+$alignItems: (
+        stretch,
+        flex-start,
+        center,
+        flex-end,
+        baseline
+);
+
+$direction: (
+        row,
+        row-reverse,
+        column,
+        column-reverse
 );
 
 @mixin breakpoint($name) {
@@ -89,6 +107,18 @@ $alignContent: (
   @each $value in $alignContent {
     &__alignContent-#{$value} {
       align-content: $value;
+    }
+  }
+
+  @each $value in $alignItems {
+    &__alignItems-#{$value} {
+      align-items: $value;
+    }
+  }
+
+  @each $value in $direction {
+    &__direction-#{$value} {
+      flex-direction: $value;
     }
   }
 }
