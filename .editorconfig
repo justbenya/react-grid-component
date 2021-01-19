@@ -1,0 +1,21 @@
+root = true
+
+# Для всех файлов используем правила
+[*]
+charset = utf-8
+
+# Перенос строки LF — Line Separator: Unix and OS X (\n)
+end_of_line = lf
+
+# Позволяет убедиться, что в конце файла всегда будет новая строка
+insert_final_newline = true
+
+# Позволяет убрать пробелы в конце строк
+trim_trailing_whitespace = true
+
+# Отступы в 4 пробела
+indent_size = 2
+indent_style = space
+
+# Максимальная ширина строки
+max_line_length = 120

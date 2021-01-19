@@ -1,11 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root'),
-);
+export { Grid } from './components/Grid/Grid';
+export { GridRuler } from './components/GridRuler/GridRuler';
+export { Box } from './components/Box/Box';
