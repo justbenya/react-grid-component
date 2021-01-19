@@ -1,6 +1,3 @@
-
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
 # dependencies
 node_modules
 
@@ -8,6 +5,7 @@ node_modules
 build
 dist
 .rpt2_cache
+lib
 
 # misc
 .DS_Store

@@ -1,7 +1,5 @@
 build/
 dist/
+lib/
 node_modules/
-.snapshots/
-*.min.js
-stories/
-example/
+rollup.config.js

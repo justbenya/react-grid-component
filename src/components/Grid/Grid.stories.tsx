@@ -1,30 +1,31 @@
-import { Box, Grid } from "@justbenya/react-grid-component";
-import "@justbenya/react-grid-component/dist/index.css";
-import { Meta, Story } from "@storybook/react/types-6-0";
-import React from "react";
+import { Meta, Story } from '@storybook/react/types-6-0';
+import React from 'react';
+import { Box } from '../Box/Box';
+import { GridRuler } from '../GridRuler/GridRuler';
+import { Grid } from './Grid';
 
 export default {
-  title: "Grid",
+  title: 'Grid',
   component: Grid,
 } as Meta;
 
 const Template: Story = (args) => (
   <div
-    style={ {
-      position: "relative",
-      height: "100vh",
-    } }
+    style={{
+      position: 'relative',
+      height: '100vh',
+    }}
   >
-    <Grid { ...args } style={ { height: "100%" } }>
-      <Grid item xs={ 1 }>
+    <Grid {...args} style={{ height: '100%' }}>
+      <Grid item xs={1}>
         <Box>1</Box>
       </Grid>
 
-      <Grid item xs={ 1 }>
+      <Grid item xs={1}>
         <Box>2</Box>
       </Grid>
 
-      <Grid item xs={ 1 }>
+      <Grid item xs={1}>
         <Box>3</Box>
       </Grid>
     </Grid>
@@ -35,7 +36,7 @@ export const BasicContainer = Template.bind({});
 BasicContainer.args = {
   container: true,
   spacing: 2,
-  justifyContent: "center",
+  justifyContent: 'center',
 };
 
 BasicContainer.argTypes = {
@@ -68,21 +69,21 @@ BasicContainer.argTypes = {
 
 export const RowInteractive: Story = (args) => (
   <div
-    style={ {
-      position: "relative",
-      height: "100vh",
-    } }
+    style={{
+      position: 'relative',
+      height: '100vh',
+    }}
   >
-    <Grid container spacing={ 2 } style={ { height: "100%" } }>
-      <Grid { ...args } >
+    <Grid container spacing={2} style={{ height: '100%' }}>
+      <Grid {...args}>
         <Box>1</Box>
       </Grid>
 
-      <Grid { ...args } >
+      <Grid {...args}>
         <Box>2</Box>
       </Grid>
 
-      <Grid { ...args } >
+      <Grid {...args}>
         <Box>3</Box>
       </Grid>
     </Grid>
@@ -128,3 +129,25 @@ RowInteractive.argTypes = {
     },
   },
 };
+
+export const Interactive: Story = (args) => (
+  <div style={{ position: 'relative' }}>
+    <Grid {...args}>
+      <Grid item xs={1}>
+        <Box>1</Box>
+      </Grid>
+
+      <Grid item xs={1}>
+        <Box>2</Box>
+      </Grid>
+
+      <Grid item xs={1}>
+        <Box>3</Box>
+      </Grid>
+
+      <Grid item xs={1}>
+        <Box>4</Box>
+      </Grid>
+    </Grid>
+  </div>
+);

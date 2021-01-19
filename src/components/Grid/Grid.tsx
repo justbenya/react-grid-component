@@ -58,5 +58,3 @@ export const Grid: FunctionComponent<{
     </div>
   );
 };
-
-export default Grid;
