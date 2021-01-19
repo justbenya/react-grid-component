@@ -1,4 +1,4 @@
 declare module '*.scss' {
   const scss: any;
-  export default scss
+  export default scss;
 }
