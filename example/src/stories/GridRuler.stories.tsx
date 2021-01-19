@@ -1,8 +1,7 @@
+import { Box, Grid, GridRuler } from "@justbenya/react-grid-component";
+import "@justbenya/react-grid-component/dist/index.css";
 import { Meta, Story } from "@storybook/react/types-6-0";
 import React from "react";
-import Box from "../components/Box/Box";
-import { Grid } from "../components/Grid/Grid";
-import { GridRuler } from "../components/GridRuler/GridRuler";
 
 export default {
   title: "GridRuler",

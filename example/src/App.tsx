@@ -1,6 +1,6 @@
-import { Grid, GridRuler, Box } from '@justbenya/react-grid-component';
-import '@justbenya/react-grid-component/dist/index.css';
-import React from 'react';
+import { Box, Grid, GridRuler } from "@justbenya/react-grid-component";
+import "@justbenya/react-grid-component/dist/index.css";
+import React from "react";
 
 const App = () => {
   return (
@@ -29,7 +29,6 @@ const App = () => {
       </Grid>
     </div>
   );
-
 };
 
 export default App;

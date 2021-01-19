@@ -13,16 +13,36 @@ npm install --save @justbenya/react-grid-component
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from '@justbenya/react-grid-component'
-import '@justbenya/react-grid-component/dist/index.css'
+import { Grid, Box } from '@justbenya/react-grid-component';
+import '@justbenya/react-grid-component/dist/index.css';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const Example = () => {
+  return (
+    <Grid
+      container spacing={ 1 }
+      justifyContent={ 'space-between' }
+      alignContent={ 'center' }
+    >
+      <Grid item xs={ 1 } sm={ 6 } md={ 4 } lg={ 3 }>
+        <Box>div 1</Box>
+      </Grid>
+
+      <Grid item xs={ 1 } sm={ 6 } md={ 4 } lg={ 3 }>
+        <Box>div 2</Box>
+      </Grid>
+
+      <Grid item xs={ 1 } sm={ 6 } md={ 4 } lg={ 3 }>
+        <Box>div 3</Box>
+      </Grid>
+
+      <Grid item xs={ 1 } sm={ 6 } md={ 4 } lg={ 3 }>
+        <Box>div 4</Box>
+      </Grid>
+    </Grid>
+  );
+};
 ```
 
 ## License
