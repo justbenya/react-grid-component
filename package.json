@@ -1,11 +1,24 @@
 {
   "name": "@justbenya/react-grid-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple Material-UI-like responsive grid system for React.",
+  "main": "dist/index.js",
   "author": "justbenya",
   "license": "MIT",
-  "repository": "justbenya/react-grid-component",
-  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justbenya/react-grid-component.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "grid system",
+    "grid"
+  ],
+  "bugs": {
+    "url": "https://github.com/justbenya/react-grid-component/issues"
+  },
+  "homepage": "https://github.com/justbenya/react-grid-component",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
   "engines": {
@@ -31,6 +44,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@storybook/react": "^6.1.14",
     "@storybook/addon-actions": "^6.1.14",
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-links": "^6.1.14",
@@ -63,16 +77,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.4"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "@storybook/react": "^6.1.14",
-    "clsx": "^1.1.1",
-    "eslint-config-airbnb-typescript": "^12.0.0",
-    "node-sass": "^5.0.0",
-    "sass": "^1.32.4"
+    "clsx": "^1.1.1"
   }
 }
